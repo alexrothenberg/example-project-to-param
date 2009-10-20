@@ -1,0 +1,83 @@
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2009-10-20 09:40:18) [GET]
+  [4;36;1mCity Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: cities: SELECT * FROM "cities" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: cities: SELECT * FROM "cities" ):
+  app/controllers/cities_controller.rb:5:in `index'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCities (20091020133833)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "permanent_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091020133833')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("cities")[0m
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2009-10-20 09:40:37) [GET]
+  [4;36;1mCity Load (0.7ms)[0m   [0;1mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 92ms (View: 87, DB: 1) | 200 OK [http://localhost/cities]
+
+
+Processing CitiesController#new (for 127.0.0.1 at 2009-10-20 09:40:40) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/cities/new]
+
+
+Processing CitiesController#create (for 127.0.0.1 at 2009-10-20 09:40:43) [POST]
+  Parameters: {"city"=>{"permanent_name"=>"miami"}, "commit"=>"Create", "authenticity_token"=>"BgFY79K2yvZDeq5xJXUwS4s39K1kXhGRpEoHfTCmkF0="}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:40:43', 'miami', '2009-10-20 13:40:43')[0m
+Redirected to http://localhost:3000/cities/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/cities]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-10-20 09:40:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 1) [0m
+Rendering template within layouts/cities
+Rendering cities/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/cities/1]
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2009-10-20 09:41:37) [GET]
+  [4;36;1mCity Load (0.5ms)[0m   [0;1mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/cities]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-10-20 09:41:40) [GET]
+  Parameters: {"id"=>"miami"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find City with ID=miami):
+  app/controllers/cities_controller.rb:16:in `show'
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)

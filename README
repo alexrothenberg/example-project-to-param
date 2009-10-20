@@ -1,0 +1,6 @@
+Sample rails project
+
+rails example-project-to-param
+cd example-project-to-param
+script/generate scaffold city permanent_name:string
+rake db:migrate
