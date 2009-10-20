@@ -1,0 +1,239 @@
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:55:57', 'miami', '2009-10-20 13:55:57')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+
+
+Processing CitiesController#create (for 0.0.0.0 at 2009-10-20 09:55:59) [POST]
+  Parameters: {"city"=>{}}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:55:59', NULL, '2009-10-20 13:55:59')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#destroy (for 0.0.0.0 at 2009-10-20 09:55:59) [DELETE]
+  Parameters: {"id"=>"MyString"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#edit (for 0.0.0.0 at 2009-10-20 09:55:59) [GET]
+  Parameters: {"id"=>"MyString"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+
+
+Processing CitiesController#index (for 0.0.0.0 at 2009-10-20 09:55:59) [GET]
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 42ms (View: 41, DB: 2) | 200 OK [http://test.host/cities]
+
+
+Processing CitiesController#new (for 0.0.0.0 at 2009-10-20 09:55:59) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/cities/new]
+  [4;36;1mCity Load (0.3ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#show (for 0.0.0.0 at 2009-10-20 09:55:59) [GET]
+  Parameters: {"id"=>"MyString"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#update (for 0.0.0.0 at 2009-10-20 09:55:59) [PUT]
+  Parameters: {"city"=>{}, "id"=>"MyString"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+
+
+Processing CitiesController#create (for 0.0.0.0 at 2009-10-20 09:56:56) [POST]
+  Parameters: {"city"=>{}}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:56:56', NULL, '2009-10-20 13:56:56')[0m
+Redirected to http://test.host/cities/2053932786
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/cities?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#destroy (for 0.0.0.0 at 2009-10-20 09:56:56) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+  [4;36;1mCity Destroy (0.2ms)[0m   [0;1mDELETE FROM "cities" WHERE "id" = 2053932785[0m
+Redirected to http://test.host/cities
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/cities/2053932785]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#edit (for 0.0.0.0 at 2009-10-20 09:56:56) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+Rendering template within layouts/cities
+Rendering cities/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/cities/2053932785/edit]
+
+
+Processing CitiesController#index (for 0.0.0.0 at 2009-10-20 09:56:56) [GET]
+  [4;36;1mCity Load (0.3ms)[0m   [0;1mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/cities]
+
+
+Processing CitiesController#new (for 0.0.0.0 at 2009-10-20 09:56:56) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/cities/new]
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#show (for 0.0.0.0 at 2009-10-20 09:56:56) [GET]
+  Parameters: {"id"=>"2053932785"}
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+Rendering template within layouts/cities
+Rendering cities/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/cities/2053932785]
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#update (for 0.0.0.0 at 2009-10-20 09:56:56) [PUT]
+  Parameters: {"city"=>{}, "id"=>"2053932785"}
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+Redirected to http://test.host/cities/2053932785
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/cities/2053932785?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+
+
+Processing CitiesController#create (for 0.0.0.0 at 2009-10-20 09:57:08) [POST]
+  Parameters: {"city"=>{}}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:57:08', NULL, '2009-10-20 13:57:08')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#destroy (for 0.0.0.0 at 2009-10-20 09:57:08) [DELETE]
+  Parameters: {"id"=>"MyString"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#edit (for 0.0.0.0 at 2009-10-20 09:57:08) [GET]
+  Parameters: {"id"=>"MyString"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+
+
+Processing CitiesController#index (for 0.0.0.0 at 2009-10-20 09:57:08) [GET]
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 11ms (View: 10, DB: 3) | 200 OK [http://test.host/cities]
+
+
+Processing CitiesController#new (for 0.0.0.0 at 2009-10-20 09:57:08) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/cities/new]
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#show (for 0.0.0.0 at 2009-10-20 09:57:08) [GET]
+  Parameters: {"id"=>"MyString"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#update (for 0.0.0.0 at 2009-10-20 09:57:08) [PUT]
+  Parameters: {"city"=>{}, "id"=>"MyString"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+
+
+Processing CitiesController#create (for 0.0.0.0 at 2009-10-20 09:57:44) [POST]
+  Parameters: {"city"=>{}}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:57:44', NULL, '2009-10-20 13:57:44')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#destroy (for 0.0.0.0 at 2009-10-20 09:57:44) [DELETE]
+  Parameters: {"id"=>"Miami"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#edit (for 0.0.0.0 at 2009-10-20 09:57:44) [GET]
+  Parameters: {"id"=>"Miami"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+
+
+Processing CitiesController#index (for 0.0.0.0 at 2009-10-20 09:57:44) [GET]
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 11ms (View: 10, DB: 3) | 200 OK [http://test.host/cities]
+
+
+Processing CitiesController#new (for 0.0.0.0 at 2009-10-20 09:57:44) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/cities/new]
+  [4;36;1mCity Load (0.5ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#show (for 0.0.0.0 at 2009-10-20 09:57:44) [GET]
+  Parameters: {"id"=>"Miami"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#update (for 0.0.0.0 at 2009-10-20 09:57:44) [PUT]
+  Parameters: {"city"=>{}, "id"=>"Miami"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+
+
+Processing CitiesController#create (for 0.0.0.0 at 2009-10-20 09:58:20) [POST]
+  Parameters: {"city"=>{"permanent_name"=>"Seattle"}}
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO "cities" ("updated_at", "permanent_name", "created_at") VALUES('2009-10-20 13:58:20', 'Seattle', '2009-10-20 13:58:20')[0m
+Redirected to http://test.host/cities/Seattle
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/cities?city%5Bpermanent_name%5D=Seattle]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "cities" [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#destroy (for 0.0.0.0 at 2009-10-20 09:58:20) [DELETE]
+  Parameters: {"id"=>"Miami"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;36;1mCity Load (0.2ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#edit (for 0.0.0.0 at 2009-10-20 09:58:20) [GET]
+  Parameters: {"id"=>"Miami"}
+  [4;35;1mCity Load (0.1ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+
+
+Processing CitiesController#index (for 0.0.0.0 at 2009-10-20 09:58:20) [GET]
+  [4;36;1mCity Load (0.3ms)[0m   [0;1mSELECT * FROM "cities" [0m
+Rendering template within layouts/cities
+Rendering cities/index
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://test.host/cities]
+
+
+Processing CitiesController#new (for 0.0.0.0 at 2009-10-20 09:58:20) [GET]
+Rendering template within layouts/cities
+Rendering cities/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/cities/new]
+  [4;35;1mCity Load (0.3ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#show (for 0.0.0.0 at 2009-10-20 09:58:20) [GET]
+  Parameters: {"id"=>"Miami"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m
+  [4;35;1mCity Load (0.2ms)[0m   [0mSELECT * FROM "cities" WHERE ("cities"."id" = 2053932785) [0m
+
+
+Processing CitiesController#update (for 0.0.0.0 at 2009-10-20 09:58:20) [PUT]
+  Parameters: {"city"=>{}, "id"=>"Miami"}
+  [4;36;1mCity Load (0.1ms)[0m   [0;1mSELECT * FROM "cities" WHERE ("cities"."id" = 0) [0m

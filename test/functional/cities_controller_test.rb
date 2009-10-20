@@ -14,7 +14,7 @@ class CitiesControllerTest < ActionController::TestCase
 
   test "should create city" do
     assert_difference('City.count') do
-      post :create, :city => { }
+      post :create, :city => { :permanent_name => 'Seattle'}
     end
 
     assert_redirected_to city_path(assigns(:city))
